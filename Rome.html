@@ -26,7 +26,25 @@
       a:active {
         color: yellow;
       }
-      img
+      #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
   </style>
   
   <div class="page">
@@ -37,13 +55,14 @@
 <a href="Munich.html">Munich, Germany</a> |
 <a href="Strasbourgh.html">Strasbourgh, France</a> |
 <a href="Palma.html">Palma de Mallorca, Spain</a> |
-<a href="Barcelona.html">Barcelona, Spain</a> |
 <a href="Prague.html">Prague, Czech Republic</a> |
 <a href="Pisa.html">Pisa, Italy</a> |
 <a href="Livorno.html">Livorno, Italy</a> |
 <a href="Garmisch.html">Garmisch-Partenkirchen, Germany</a> |
 <a href="Rome.html">Rome, Italy</a> |
 </nav>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <h1 style="font-size:60px;">Rome, Italy</h1>
 
@@ -110,6 +129,28 @@
 <img src="https://scontent.fscn1-1.fna.fbcdn.net/v/t1.0-9/122247542_10221399698414204_5647248611957317090_n.jpg?_nc_cat=103&ccb=2&_nc_sid=730e14&_nc_ohc=WS8qWZRO_pwAX_69BNv&_nc_ht=scontent.fscn1-1.fna&oh=0d5c6d7b2469012d4fba639d4a727a4d&oe=5FB7FBDF" alt="The Vatican 3" style="width:60%;">
 
 <img src="https://scontent.fscn1-1.fna.fbcdn.net/v/t1.0-9/122139563_10221399682373803_8333303647916186888_n.jpg?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_ohc=l9wDwk2D3nMAX-BbwTP&_nc_ht=scontent.fscn1-1.fna&oh=73881ae030e099c90d6d96fe2c42c840&oe=5FB89E17" alt="Too many kids" style="width:60%;">
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 
 
