@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
+<head>
+<body>
+  <font color="white">
+  <style>
+    .page {text-align:center;
+           background-image: url("https://www.deskpad.de/wp-content/uploads/2017/11/3010_alte_karte_70x50cm.jpg");
+           text-color: white;
+           }
+     /* unvisited link */
+      a:link {
+        color: white;
+      }
+      /* visited link */
+      a:visited {
+        color: black;
+      }
+      /* mouse over link */
+      a:hover {
+        color: red;
+      }
+      /* selected link */
+      a:active {
+        color: yellow;
+      }
+      #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+  
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid red;
+}
+
+img{padding: 20px;
+}
+</style>
+
+<div class="page">
+
+<body>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+<a href="unit2.html">About Me</a> 
+<a href="Munich.html">Munich, Germany</a>
+<a href="Strasbourgh.html">Strasbourgh, France</a>
+<a href="Palma.html">Palma de Mallorca, Spain</a>
+<a href="Prague.html">Prague, Czech Republic</a>
+<a href="Pisa.html">Pisa, Italy</a>
+<a href="Livorno.html">Livorno, Italy</a>
+<a href="Garmisch.html">Garmisch-Partenkirchen, Germany</a>
+<a href="Rome.html">Rome, Italy</a>
+<a href="Contactus.html">Contact Us</a>
+<a href="Links.html">Helpful Links</a>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<h1 style="font-size:30px;"><a href="https://www.thecrazytourist.com/25-best-things-munich-germany/">25 things to do in Munich</a></h1>
+
+<img src="https://cdn.thecrazytourist.com/wp-content/uploads/2017/09/ccimage-shutterstock_641064592.jpg" alt="bmwworld" style="width:60%;">
+
+<h1 style="font-size:30px;"><a href="https://www.thecrazytourist.com/15-best-things-strasbourg-france/">15 things to do in Strasbourgh</a></h1>
+
+<img src="https://cdn.thecrazytourist.com/wp-content/uploads/2016/10/Rue-du-Bain-aux-Plantes-.jpg" alt="petitefrance" style="width:60%;">
+
+<h1 style="font-size:30px;"><a href="https://theculturetrip.com/europe/spain/articles/top-10-things-to-see-and-do-in-palma-de-mallorca-spain/">Top things to do in Palma de Mallorca</a></h1>
+
+<img src="https://img.theculturetrip.com/1440x807/smart/wp-content/uploads/2020/09/la-seu-cathedral-palma-de-mallorca-spain-e1601049417474.jpg" alt="palma" style="width:60%;">
+
+<h1 style="font-size:30px;"><a href="https://www.thecrazytourist.com/top-25-things-to-do-in-prague/">25 things to do in Prague</a></h1>
+
+<img src="https://cdn.thecrazytourist.com/wp-content/uploads/2018/06/ccimage-shutterstock_428804917.jpg" alt="prague" style="width:60%;">
+
+<h1 style="font-size:30px;"><a href="https://www.thecrazytourist.com/15-best-things-pisa-italy/">15 things to do in Pisa</a></h1>
+
+<img src="https://cdn.thecrazytourist.com/wp-content/uploads/2017/09/ccimage-shutterstock_529910596.jpg" alt="Pisa" style="width:60%;">
+
+<h1 style="font-size:30px;"><a href="https://www.thecrazytourist.com/15-best-things-livorno-italy/">15 things to do in Livorno</a></h1>
+
+<img src="https://cdn.thecrazytourist.com/wp-content/uploads/2017/08/Calafuria-coast.jpg" alt="Livorno" style="width:60%;">
+
+<h1 style="font-size:30px;"><a href="https://theculturetrip.com/europe/germany/articles/the-top-10-things-to-see-and-do-in-garmisch-partenkirchen/">Things to do in Garmisch-Partenkirchen</a></h1>
+
+<img src="https://img.theculturetrip.com/1440x/smart/wp-content/uploads/2017/11/garmisch-2642334_960_720.jpg" alt="Zugspitze" style="width:60%;">
+
+<h1 style="font-size:30px;"><a href="https://www.thecrazytourist.com/25-best-things-rome-italy/">25 things to do in Rome</a></h1>
+
+<img src="https://cdn.thecrazytourist.com/wp-content/uploads/2017/04/Colosseum.jpg" alt="coliseum" style="width:60%;">
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+</body>
+</html>
